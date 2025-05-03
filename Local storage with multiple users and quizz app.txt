@@ -343,5 +343,238 @@ function logout(){
   location.href="./index.html"
   }
 
+Style.CSS
+
+ body {
+    background-color: whitesmoke;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quiz-box {
+    margin-top: 20px;
+    background: gray;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    display: none;
+  }
+  
+  .timer, .score {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    min-height: 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .feedback.correct {
+    color: #28a745;
+  }
+  
+  .feedback.wrong {
+    color: #dc3545;
+  }
+  
+  .question {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .answers button {
+    padding: 0.75rem 1rem;
+    background-color: #2f3a4c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .answers button:hover {
+    background-color: #3c4f6e;
+  }
+  
+  .correct {
+    background-color: #28a745 !important;
+    color: white;
+  }
+  
+  .wrong {
+    background-color: #dc3545 !important;
+    color: white;
+  }
+  
+  .restart-button {
+    background-color: #ffc107;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .restart-button:hover {
+    background-color: #e0a800;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+ #timer{
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+ }
+
+ .score{
+  margin-top: 20px;
+
+ }
+
+
+ .intro-card {
+    background-color: gray;
+    color: #333;
+    padding: 2rem;
+    border-radius: 40px;
+    max-width: 500px;
+    width: 100%;
+box-shadow:20px 40px 10px black ; 
+   text-align: center;
+    margin-top: 30px;  }
+  
+  .intro-card h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .intro-card input {
+    width: 400px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .start-button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #218838;
+  }
+
+
+.intro-card h2 {
+    color: white;
+  }
+
+
+
+  .pp{
+    color: white;
+    font-size: 20px;
+  }
+
+
+  
+  .swal2-confirm {
+    background: none !important;
+    color: #000 !important;
+  }
+
+  .po{
+    background-color: blue;
+    color: white;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+
+
+  .custom-ok-button {
+    background-color: #218838 !important; 
+    color: white !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+
+
+@media (max-width: 600px) {
+
+#name{
+    width: 250px;
+}
+
+#rollno{
+    width: 250px;
+}
+
+#studentid{
+
+    width: 250px;
+
+}
+
+.intro-card {
+    background-color: gray;
+    color: #333;
+    padding: 2rem;
+    border-radius: 40px;
+    max-width: 270px;
+    width: 80%;
+box-shadow:20px 40px 10px black ; 
+   text-align: center;
+margin-top: 30%;
+
+
+
+
+
+}
+
+
+  
+}
+
+
+
+
+  
+
 
 
