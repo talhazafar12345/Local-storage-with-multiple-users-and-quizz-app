@@ -1,6 +1,6 @@
 Index.html
 
-<div>
+<div class="pal">
     <h1>SignUp</h1>
     <input placeholder="Enter Name" type="text" name="" id="inp">
     <br>
@@ -10,12 +10,18 @@ Index.html
     <br>
     <input placeholder="Enter Password" type="password" name="" id="seo">
 
+    <br>
+    <br>
+
+    <div class="aaa">
+
+        <button onclick="signup()">Signup</button>
+            
+       </div>
+
+
+
  </div>
-
- <br>
-<br>
-
- <button onclick="signup()">Signup</button>
 
 App.JS
 
@@ -67,17 +73,22 @@ function signup(){
 
 Login .html
 
-<h1>SignIn Page</h1>
+<div class="lap">
+    <h1>Login</h1>
 
-    <div>
-        <input placeholder="Enter Email" type="text" name="" id="email">
-        <br>
-        <br>
-        <input placeholder="Enter Password" type="password" name="" id="password">
-        <br>
-        <br>
-        <button onclick="signin()">Login</button>
-    </div>
+    <input placeholder="Enter Email" type="text" name="" id="email">
+    <br>
+    <br>
+    <input placeholder="Enter Password" type="password" name="" id="password">
+    <br>
+    <br>
+    <div class="bbb">
+
+    <button onclick="signin()">Login</button>
+
+</div>
+</div>
+
 
 App.JS
 
@@ -106,7 +117,7 @@ function signin() {
 
 Welcome.html in quizz Appp
 
-div class="intro-card" id="intro-card">
+<div class="intro-card" id="intro-card">
 
         <h2>Welcome <script>document.write(localStorage.getItem("Name"))</script></h2>
         <p class="pp">Please enter your details for quizz</p>
@@ -345,10 +356,7 @@ function logout(){
 
 Style.CSS
 
- body {
-    background-color: whitesmoke;
-    color: #fff;
-    display: flex;
+  body {
     justify-content: center;
     align-items: center;
   }
@@ -361,6 +369,13 @@ Style.CSS
     width: 100%;
     max-width: 600px;
     display: none;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .quiz-box h1{
+    text-align: center;
+    color: white;
   }
   
   .timer, .score {
@@ -437,9 +452,7 @@ Style.CSS
     background-color: #e0a800;
   }
 
-  h1{
-    text-align: center;
-  }
+  
 
  #timer{
     text-align: center;
@@ -449,6 +462,7 @@ Style.CSS
 
  .score{
   margin-top: 20px;
+  color: white;
 
  }
 
@@ -462,7 +476,11 @@ Style.CSS
     width: 100%;
 box-shadow:20px 40px 10px black ; 
    text-align: center;
-    margin-top: 30px;  }
+    margin: auto;
+    margin-top: 50px;
+  
+  
+  }
   
   .intro-card h2 {
     margin-bottom: 10px;
@@ -559,22 +577,255 @@ box-shadow:20px 40px 10px black ;
     width: 80%;
 box-shadow:20px 40px 10px black ; 
    text-align: center;
-margin-top: 30%;
+margin-top: 80px;
 
 
+}
+
+.quiz-box {
+
+  background: gray;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 600px;
+  display: none;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.quiz-box h1{
+  text-align: center;
+}
 
 
-
+.answers button {
+  padding: 0.75rem 1rem;
+  background-color: #2f3a4c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 
   
 }
 
+.pal{
+  text-align: center; 
+  background-color: blue;
+  height: 320px;
+  width: 200px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.pal h1{
+  padding-top: 30px;
+  color:  white;
+}
+
+
+.aaa{
+  text-align: center;
+}
+
+
+.aaa button{
+  background-color: crimson;
+  width: 90px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+
+.pal input{
+
+  border-radius: 10px;
+  height: 30px;
+  width: 160px;
+border: 2px solid black;
+color: navy;
+
+}
+
+input::placeholder{
+  color: red;
+}
+
+
+.lap{
+  text-align: center; 
+  background-color: blue;
+  height: 270px;
+  width: 200px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.lap h1{
+  padding-top: 30px;
+  color: white;
+}
 
 
 
+
+
+.lap input{
+
+  border-radius: 10px;
+  height: 30px;
+  width: 160px;
+border: 2px solid black;
+color: navy;
+}
+
+.lap input{
+
+  border-radius: 10px;
+  height: 30px;
+  width: 160px;
+border: 2px solid black;
+color: navy;
+
+}
+
+input::placeholder{
+  color: red;
+}
+
+
+
+.bbb button{
+  background-color: crimson;
+  width: 90px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+
+.bbb{
+  text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
   
+
+.pal{
+
+  text-align: center; 
+  background-color: blue;
+  height: 400px;
+  width: 330px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 30%;
+
+}
+
+
+.pal input{
+
+  border-radius: 10px;
+  height: 30px;
+  width: 260px;
+border: 2px solid black;
+color: navy;
+height: 50px;
+font-size: 20px;
+
+}
+
+
+input::placeholder{
+  color: red;
+  font-size: 20px;
+}
+
+.aaa button{
+  background-color: crimson;
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.lap{
+
+  text-align: center; 
+  background-color: blue;
+  height: 420px;
+  width: 330px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 30%;
+
+}
+
+
+.lap input{
+
+  border-radius: 10px;
+  height: 30px;
+  width: 260px;
+border: 2px solid black;
+color: navy;
+height: 50px;
+font-size: 20px;
+
+}
+
+
+input::placeholder{
+  color: red;
+  font-size: 20px;
+}
+
+.bbb button{
+  background-color: crimson;
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+
+}
+
+
+
+}
+
+
+
 
 
 
