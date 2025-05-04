@@ -352,7 +352,7 @@ function resetState() {
 
 function logout(){
   window.location.reload()
-  location.href="./index.html"
+  location.href="./login.html"
   }
 
 
@@ -372,7 +372,7 @@ function forgotPassword() {
           if (newPassword && newPassword.trim().length > 0) {
               allUsers[userIndex].Password = newPassword;
               localStorage.setItem("users", JSON.stringify(allUsers));
-              alert("Password updated successfully!");
+              alert("Password updated successfully");
           } else {
               alert("Password cannot be empty.");
           }
