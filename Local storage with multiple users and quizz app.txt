@@ -87,6 +87,7 @@ Login .html
     <button onclick="signin()">Login</button>
 
 </div>
+ <a class="anchor" href="#" onclick="forgotPassword()">Forget Password?</a>
 </div>
 
 
@@ -354,9 +355,36 @@ function logout(){
   location.href="./index.html"
   }
 
+
+
+function forgotPassword() {
+      var email = prompt("Enter your registered email:");
+  
+      var allUsers = JSON.parse(localStorage.getItem("users")) || [];
+  
+      var userIndex = allUsers.findIndex(function(user) {
+          return user.Email === email;
+      });
+  
+      if (userIndex !== -1) {
+          var newPassword = prompt("Enter your new password:");
+  
+          if (newPassword && newPassword.trim().length > 0) {
+              allUsers[userIndex].Password = newPassword;
+              localStorage.setItem("users", JSON.stringify(allUsers));
+              alert("Password updated successfully!");
+          } else {
+              alert("Password cannot be empty.");
+          }
+      } else {
+          alert("No account found with that email.");
+      }
+  }
+  
+
 Style.CSS
 
-  body {
+   body {
     justify-content: center;
     align-items: center;
   }
@@ -716,7 +744,15 @@ input::placeholder{
   text-align: center;
 }
 
+.anchor{
+  text-align: center;
+  color: white;
+  font-size:11px;
+text-decoration: none;
+position: relative;
+top: 5px;
 
+}
 
 
 
@@ -767,15 +803,6 @@ input::placeholder{
 }
 
 
-
-
-
-
-
-
-
-
-
 .lap{
 
   text-align: center; 
@@ -820,12 +847,17 @@ input::placeholder{
 
 }
 
-
-
+.anchor{
+  text-align: center;
+  color: white;
+  font-size:11px;
+text-decoration: none;
+position: relative;
+top: 20px;
+font-size: 17px;
 }
 
-
-
+}
 
 
 
