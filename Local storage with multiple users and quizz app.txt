@@ -54,7 +54,7 @@ function signup(){
   }
   
   
-  else(alert("User added successfullyf"))
+  else(alert("User added successfully"))
   
   var alluser=JSON.parse(localStorage.getItem("users")) || []
   
